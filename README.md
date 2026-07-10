@@ -191,11 +191,6 @@ In this lab you learned how to:
 
 ---
 
-# 🚀 Next Lab
-
-➡ **Linux02 – File Permissions**
-
----
 
 # 📚 References
 
