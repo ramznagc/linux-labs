@@ -12,16 +12,6 @@ In this lab, I explored shell variables, environment variables, PATH customizati
 
 ---
 
-# 🎯 Learning Objectives
-
-After completing this lab, I was able to:
-
-- Understand the difference between shell and environment variables
-- Create and export environment variables
-- Remove variables using `unset`
-- Customize the PATH variable
-- Understand single and double quoting
-- Execute commands with elevated privileges using `sudo`
 
 ---
 
