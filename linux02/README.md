@@ -10,7 +10,7 @@ Environment variables are fundamental to Linux systems. They define how the shel
 
 In this lab, I explored shell variables, environment variables, PATH customization, variable expansion, quoting rules, and privilege escalation using `sudo`.
 
----
+--
 
 # 🎯 Learning Objectives
 
