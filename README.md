@@ -70,7 +70,7 @@ Through these hands-on labs, I am working to:
 - GitHub
 - AWS EC2
 
---
+---
 
 ## 📈 Progress
 
