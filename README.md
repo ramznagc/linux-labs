@@ -1,199 +1,85 @@
-# 🐧 Hands-on Linux 01 – Managing Files in Linux
+# 🐧 Linux Hands-on Labs
 
-A beginner-friendly hands-on lab covering essential Linux file management commands and utilities.
+Welcome to my **Linux Hands-on Labs** repository section!
 
----
-
-# 📖 Overview
-
-This hands-on lab introduces the fundamental Linux commands used to create, view, search, and manage files. By completing these exercises, you will gain practical experience with common Linux utilities that are widely used in system administration.
+This section documents my journey of learning Linux through hands-on practice. Each lab focuses on essential Linux concepts and command-line skills that are important for **Cloud Computing, System Administration, and DevOps**.
 
 ---
 
-# 🎯 Learning Outcomes
+## 📚 Available Labs
 
-After completing this lab, you will be able to:
-
-- Understand the Linux file system.
-- Create and edit files.
-- Display and manipulate file contents.
-- Search for files using `find`.
-- Search text using `grep`.
-- Manage file ownership using `chown` and `chgrp`.
+| Lab | Topic | Status |
+|---|---|---|
+| 🐧 Linux 01 | File Management, Searching & Ownership | ✅ Completed |
+| 🐧 Linux 02 | Environment Variables, PATH, Quoting & sudo | ✅ Completed |
 
 ---
 
-# 📚 Table of Contents
+## 📂 Linux 01 - Managing Files in Linux
 
-1. Working with File Contents
-2. Searching Files
-3. File Ownership
-4. Summary
-5. References
+In this lab, I practiced essential Linux file management and searching operations.
 
----
+### Topics Covered
 
-# 📂 Part 1 – Working with File Contents
+- Working with files and directories
+- Viewing file contents with `head`, `tail`, `cat`, `more`, and `less`
+- Searching for files using `find`
+- Searching inside files using `grep`
+- Managing file ownership with `chown`
+- Managing group ownership with `chgrp`
 
-Create a working directory and move into it.
-
-```bash
-mkdir linux-lessons
-cd linux-lessons
-```
-
-Create a text file named **welcome.txt** and practice the following commands.
-
-## Display the first lines
-
-```bash
-head welcome.txt
-```
-
-Displays the first 10 lines of the file.
+➡️ [View Linux 01 Hands-on Lab](./Linux01/)
 
 ---
 
-## Display the last lines
+## 🌱 Linux 02 - Environment Variables & PATH
 
-```bash
-tail -5 welcome.txt
-```
+In this lab, I explored Linux environment variables and how the shell manages variables, command paths, quoting, and administrative privileges.
 
-Displays the last 5 lines.
+### Topics Covered
 
----
+- Shell Variables
+- Environment Variables
+- `export` and `unset`
+- PATH Management
+- Variable Expansion
+- Single and Double Quoting
+- Using `sudo`
 
-## Display the entire file
-
-```bash
-cat welcome.txt
-```
-
-Prints the complete file content.
+➡️ [View Linux 02 Hands-on Lab](./Linux02/)
 
 ---
 
-## Read page by page
+## 🎯 Learning Goals
 
-```bash
-more welcome.txt
-```
+Through these hands-on labs, I am working to:
 
-Displays the file one screen at a time.
-
----
-
-## Navigate through large files
-
-```bash
-less welcome.txt
-```
-
-Allows forward and backward navigation inside the file.
+- Build a strong Linux foundation
+- Improve my command-line skills
+- Understand Linux system administration concepts
+- Strengthen my Cloud & DevOps knowledge
+- Learn through consistent hands-on practice
 
 ---
 
-## Display the file in reverse order
+## 🛠️ Technologies & Tools
 
-```bash
-tac welcome.txt
-```
-
-Prints the file from the last line to the first.
-
----
-
-# 🔍 Part 2 – Searching Files
-
-## Using `find`
-
-Find a specific file.
-
-```bash
-find . -name welcome.txt
-```
-
-Find all text files.
-
-```bash
-find . -type f -name "*.txt"
-```
-
-Find files modified within the last 10 days.
-
-```bash
-find /home -mtime -10
-```
+- Linux
+- Bash
+- Git
+- GitHub
+- AWS EC2
 
 ---
 
-## Using `grep`
+## 📈 Progress
 
-Search for the word **kernel**.
-
-```bash
-grep "kernel" linux.txt
+```text
+Linux Fundamentals
+│
+├── ✅ Linux 01 - File Management & Searching
+│
+└── ✅ Linux 02 - Environment Variables & PATH
 ```
 
-Case-insensitive search.
-
-```bash
-grep -i "linux" linux.txt
-```
-
-Match the whole word only.
-
-```bash
-grep -w "kernel" linux.txt
-```
-
-Display three lines after the matching line.
-
-```bash
-grep -A3 "line 5" welcome.txt
-```
-
----
-
-# 👤 Part 3 – File Ownership
-
-Change the owner of a file.
-
-```bash
-sudo chown root linux.txt
-```
-
-Change both owner and group.
-
-```bash
-sudo chown root:root grep.txt
-```
-
-Change only the group ownership.
-
-```bash
-sudo chgrp root pattern.txt
-```
-
----
-
-# ✅ Summary
-
-In this lab you learned how to:
-
-- Create and manage files and directories.
-- Display file contents using different Linux utilities.
-- Search files with the `find` command.
-- Search text using `grep`.
-- Change file ownership with `chown`.
-- Modify group ownership with `chgrp`.
-
----
-
-
-# 📚 References
-
-- https://linuxcommand.org/
-- https://phoenixnap.com/kb/grep-command-linux-unix-examples
-- https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+More Linux hands-on labs will be added as I continue my **Cloud & DevOps learning journey**. 🚀
