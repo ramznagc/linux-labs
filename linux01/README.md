@@ -1,68 +1,109 @@
-# 🐧 Linux Labs
+# 🐧 Hands-on Linux 01 – Managing Files in Linux
 
-Welcome to my Linux learning journey!
-
-This repository contains hands-on Linux labs, commands, and system administration exercises completed as part of my Cloud & DevOps learning path.
+> A beginner-friendly hands-on lab for learning Linux file management commands.
 
 ---
 
-# 📚 Topics
+## 📖 Overview
 
-- Linux Basics
-- File Management
-- File Permissions
-- Users & Groups
-- Processes
-- Networking
-- Package Management
-- Shell Scripting
+This hands-on lab introduces essential Linux commands for creating, viewing, editing, searching, and managing files. By completing the exercises, you will gain practical experience with common Linux utilities used in everyday system administration.
 
----
+## 🎯 Learning Outcomes
 
-# 🚀 Current Progress
+After completing this lab, you will be able to:
 
-| Lab | Topic | Status |
-|------|-------|--------|
-| Linux01 | Managing Files in Linux | ✅ |
-| Linux02 | File Permissions | ⏳ Coming Soon |
-| Linux03 | Users & Groups | ⏳ Coming Soon |
-| Linux04 | Processes | ⏳ Coming Soon |
-| Linux05 | Networking | ⏳ Coming Soon |
+- Understand the Linux file system.
+- Create and edit files.
+- Display and manipulate file contents.
+- Search for files using `find`.
+- Search text using `grep`.
+- Manage file ownership with `chown` and `chgrp`.
 
 ---
 
-# 📂 Repository Structure
+## 📚 Table of Contents
 
-```text
-linux-labs
-│
-├── README.md
-│
-└── linux
-    ├── Linux01.md
-    ├── Linux02.md
-    ├── Linux03.md
-    └── ...
+1. Working with File Contents
+2. Searching Files
+3. File Ownership
+4. Summary
+5. References
+
+---
+
+# Part 1 – Working with File Contents
+
+Use the following commands to create directories, create files, display file contents, and manipulate text.
+
+```bash
+mkdir linux-lessons
+cd linux-lessons
+```
+
+Create a text file named `welcome.txt` and practice using:
+
+- `head`
+- `tail`
+- `cat`
+- `more`
+- `less`
+- `tac`
+
+Example:
+
+```bash
+head welcome.txt
+tail -5 welcome.txt
+cat welcome.txt
 ```
 
 ---
 
-# 🎯 Learning Goals
+# Part 2 – Searching Files
 
-- Build a solid Linux foundation.
-- Learn Linux commands through hands-on practice.
-- Understand Linux system administration.
-- Prepare for Cloud & DevOps engineering roles.
-- Create a professional Linux portfolio on GitHub.
+## Using `find`
+
+```bash
+find . -name welcome.txt
+find . -type f -name "*.txt"
+find /home -mtime -10
+```
+
+## Using `grep`
+
+```bash
+grep "kernel" linux.txt
+grep -i "linux" linux.txt
+grep -w "kernel" linux.txt
+grep -A3 "line 5" welcome.txt
+```
 
 ---
 
-# 📖 Labs
+# Part 3 – File Ownership
 
-| Topic | Documentation |
-|---------|---------------|
-| Managing Files | [Linux01](linux/Linux01.md) |
+```bash
+sudo chown root linux.txt
+sudo chown root:root grep.txt
+sudo chgrp root pattern.txt
+```
 
 ---
 
-⭐ New Linux labs will be added regularly.
+# 📌 Summary
+
+In this lab you learned how to:
+
+- Create files and directories
+- View and manipulate file contents
+- Search files with `find`
+- Search text with `grep`
+- Manage ownership using `chown` and `chgrp`
+
+---
+
+# 📚 References
+
+- https://linuxcommand.org/
+- https://phoenixnap.com/kb/grep-command-linux-unix-examples
+- https://www.geeksforgeeks.org/grep-command-in-unixlinux/

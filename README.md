@@ -83,3 +83,35 @@ Linux Fundamentals
 ```
 
 More Linux hands-on labs will be added as I continue my **Cloud & DevOps learning journey**. 🚀
+
+
+---
+
+
+## 📁 Repository Structure
+
+```text
+linux-labs/
+├── README.md
+├── linux01/
+│   └── Linux01.md
+├── linux02/
+│   └── README.md
+└── linux03/
+    ├── README.md
+    ├── user-management.md
+    └── package-management.md
+```
+
+---
+
+## 🎯 Learning Goals
+
+- Improve Linux command-line skills
+- Learn Linux system administration
+- Practice hands-on lab exercises
+- Build a strong foundation for Cloud & DevOps
+
+---
+
+⭐ This repository is continuously updated as I progress through my Linux learning journey.
