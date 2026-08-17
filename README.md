@@ -315,3 +315,16 @@ linux-labs/
 ```
 
 ---
+<<<<<<< Updated upstream
+=======
+
+## Disk Health Check
+
+The disk health check script monitors root filesystem usage
+and returns different exit codes based on configured thresholds.
+
+### Usage
+
+```bash
+./scripts/disk_health_check.sh
+>>>>>>> Stashed changes
