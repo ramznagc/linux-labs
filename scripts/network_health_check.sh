@@ -2,12 +2,15 @@
 
 TARGET="${1:-https://example.com}"
 
-if curl -fsS --max-time 5 "$TARGET" > /dev/null; then
-    echo "Target: $TARGET"
+HTTP_STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 5 "$TARGET")
+
+echo "Target: $TARGET"
+echo "HTTP status: $HTTP_STATUS"
+
+if [[ "$HTTP_STATUS" =~ ^2[0-9][0-9]$ ]]; then
     echo "Status: UP"
     exit 0
 else
-    echo "Target: $TARGET"
     echo "Status: DOWN"
     exit 2
 fi
